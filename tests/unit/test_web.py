@@ -96,7 +96,7 @@ def test_dashboard_served(panel):
         f"http://127.0.0.1:{panel.port}/", timeout=10
     ) as r:
         assert r.status == 200
-        assert "Port Forwarding Manager" in r.read().decode("utf-8")
+        assert "WSL + Port Forwarding" in r.read().decode("utf-8")
 
 
 def test_state_endpoint(panel, env):
