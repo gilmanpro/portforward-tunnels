@@ -11,11 +11,12 @@
 
 | Repositorio | Descripción |
 |---|---|
-| **[wsl-port](https://github.com/gilmanpro/wsl-port)** | ⭐ **App unificada** — WSL Manager + Port Forwarder en 1 clic (recomendada) |
-| [wsl-manager-gui](https://github.com/gilmanpro/wsl-manager-gui) | Base de gestión WSL — vendored en wsl-port |
-| **port-forwarder-app** (este repo) | Base de port forwarding — vendored en wsl-port |
+| **[wsl-port-unified](https://github.com/gilmanpro/wsl-port-unified)** | ⭐ **App unificada** — WSL Manager + Port Forwarder en 1 clic (recomendada) |
+| [wsl-distro-manager](https://github.com/gilmanpro/wsl-distro-manager) | Solo gestión de distros WSL — vendored en wsl-port-unified |
+| **portforward-tunnels** (este repo) | Base de port forwarding para Windows — vendored en wsl-port-unified |
+| [portrelay](https://github.com/gilmanpro/portrelay) | Variante **headless multiplataforma** (Win/Linux/macOS, CLI sin GUI ni dependencias) |
 
-> **Recomendado:** usa **[wsl-port](https://github.com/gilmanpro/wsl-port)** que unifica ambas bases. Este repo sigue siendo útil de forma independiente y coexiste con wsl-manager-gui (puertos propios).
+> **Recomendado en Windows con WSL:** usa **[wsl-port-unified](https://github.com/gilmanpro/wsl-port-unified)** que unifica ambas bases. ¿Servidor/VPS/Linux o quieres cero dependencias? usa **[portrelay](https://github.com/gilmanpro/portrelay)**. Este repo sigue siendo útil de forma independiente (GUI de bandeja + API + MCP para puertos).
 
 ---
 
