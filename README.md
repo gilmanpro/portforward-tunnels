@@ -118,15 +118,15 @@ docker compose up -d
 - Volumen `pf-data` en `/data` (config, secrets, métricas, pidfiles) — es persistente.
 - Opcional: monta tus claves SSH con `- ${USERPROFILE}/.ssh:/root/.ssh:ro` en `docker-compose.yml`.
 - Puertos: `8794` panel web · `8795` API REST · `8796` MCP (si se activan).
-  No chocan con wsl-manager-gui (que usa 8790/8791/8792): ambas apps pueden
+  No chocan con wsl-distro-manager (que usa 8790/8791/8792): ambas apps pueden
   correr a la vez en la misma máquina.
 
 ## Instalación
 
 ```powershell
 # Desde el repo:
-git clone https://github.com/gilmanpro/port-forwarder-app
-cd port-forwarder-app
+git clone https://github.com/gilmanpro/portforward-tunnels
+cd portforward-tunnels
 python -m venv .venv
 .venv\Scripts\activate
 pip install -e .              # core + CLI (cero dependencias externas)
@@ -325,7 +325,7 @@ Pasos para quitar **toda** huella de la app en Windows. Ejecuta en PowerShell
 
 6. **Borrar el entorno virtual** (si instalaste desde el código):
    ```powershell
-   Remove-Item ".\proyectos\port-forwarder-app\.venv" -Recurse -Force
+   Remove-Item ".\proyectos\portforward-tunnels\.venv" -Recurse -Force
    ```
 
 7. **Docker** (si lo usaste con contenedor; Docker Desktop en sí es aparte):
@@ -340,7 +340,7 @@ Pasos para quitar **toda** huella de la app en Windows. Ejecuta en PowerShell
    Test-Path "$env:APPDATA\PortForwarder"                                          # False
    ```
 
-> El código fuente (`proyectos\port-forwarder-app`) y los repos de GitHub se
+> El código fuente (`proyectos\portforward-tunnels`) y los repos de GitHub se
 > conservan; puedes reinstalar cuando quieras siguiendo la sección
 > [Instalación](#instalación).
 
@@ -352,7 +352,7 @@ Pasos para quitar **toda** huella de la app en Windows. Ejecuta en PowerShell
 4. Envía un pull request describiendo el cambio.
 
 Reporta bugs o pide funciones en
-[Issues](https://github.com/gilmanpro/port-forwarder-app/issues).
+[Issues](https://github.com/gilmanpro/portforward-tunnels/issues).
 
 ## Licencia
 

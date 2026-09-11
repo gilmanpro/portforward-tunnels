@@ -77,5 +77,5 @@ Los paths con `%VAR%` se expanden al cargar. Se valida en cada carga
 | `ui.auto_assign_port_range` | F17 (P1) |
 
 > **v0.2.3:** los puertos por defecto pasan a **8794 (web) / 8795 (API) / 8796 (MCP)**
-> para que port-forwarder-app y wsl-manager-gui (8790/8791/8792) puedan convivir
+> para que portforward-tunnels y wsl-distro-manager (8790/8791/8792) puedan convivir
 > en la misma máquina sin colisiones. Las configs existentes conservan sus valores.

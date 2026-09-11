@@ -15,7 +15,7 @@
 | `web start` con curl/POST da 403 | proteccion CSRF (v0.2.1) | añade `-H "Origin: http://127.0.0.1:8794"` (el mismo host y puerto del panel) |
 | `conflicts` reporta puerto ocupado | otro servicio escucha | Cambia el puerto o detén el servicio |
 | Logs sin secretos visibles | redactor global (por diseño) | Busca el evento en SQLite (`events`) si necesitas auditoría |
-| `python -m src.cli` no encuentra `src` | ejecutado fuera del repo | Corre desde `port-forwarder-app/` o instala con `pip install -e .` |
+| `python -m src.cli` no encuentra `src` | ejecutado fuera del repo | Corre desde `portforward-tunnels/` o instala con `pip install -e .` |
 
 ## Checklist de release manual (14.3)
 
