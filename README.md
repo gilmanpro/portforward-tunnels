@@ -3,7 +3,7 @@
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Plataforma](https://img.shields.io/badge/Plataforma-Windows%20%7C%20Linux%20%7C%20Docker-0078D6?logo=windows&logoColor=white)](#requisitos)
-[![Tests](https://img.shields.io/badge/Tests-147%2F147%20passed-2ea44f)](#tests)
+[![Tests](https://img.shields.io/badge/Tests-162%2F162%20passed%20(+2%20skip%20admin)-2ea44f)](#tests)
 
 > Gestión de **redirección de puertos Windows → WSL** (netsh portproxy + firewall) y **túneles SSH hacia VPS**, con supervisor automático, health checks, alertas, programador, perfiles, panel web y CLI completo con **paridad garantizada** con la GUI.
 
